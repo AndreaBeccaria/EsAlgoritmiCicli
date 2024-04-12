@@ -1,0 +1,84 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+main{
+    height: 80vh;
+    overflow: auto;
+}
+
+fieldset{
+    padding: 15px;
+}
+
+legend{
+    font-weight: bold;
+    font-size: 15pt;
+}
+
+button{
+    display: block;
+    background-color: blue;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    color:white;
+}
+
+div:has(>ul){
+    display: flex;
+    font-size: 14pt;
+}
+
+ul{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 5px;
+    height: 400px;
+}
+
+ul:first-child{
+    background-color:cornflowerblue;
+}
+
+ul:last-child{
+    background-color: coral;
+}
+
+#cardGroup{
+    display: flex;
+    width: 95%;
+    flex-wrap: wrap;
+}
+
+article{
+    border: 1px solid blue;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px black;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+}
+
+article:hover{
+    box-shadow: 0px 0px 20px blue;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+h3::before{
+    content: "di ";
+}
